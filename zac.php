@@ -208,7 +208,6 @@ public function actionPostGeneralInfo(){
 			Setup::insert_activity_log("MasterSettingsStep1","general_info",$model->id,'',$details);
 			/*render the second tab*/
 
-
 		}
 	}
 }
