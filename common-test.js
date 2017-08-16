@@ -43,7 +43,7 @@ $(document).ready(function(){
 											break;
 					case "render_page_only":var data =({'tab':tabName});
 											if(tabName=='general_info')
-												var option = [{'callback':showFirstSlider,'active':currentActiveElement}];
+												var option = {callback:showFirstSlider,active:currentActiveElement};
 											else if(tabName=='contact_info')
 												var option = [{'callback':showSecondSlider,'active':currentActiveElement}];
 												//var option = showSecondSlider;
