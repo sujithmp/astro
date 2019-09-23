@@ -46,6 +46,22 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Validator
+
+/* 
+	In 6  and above versions of express validator 
+	you will get an error of expressValidator is not 
+	a function.
+	Here i just degraded to lower version less than 6
+	you  can just specify the exact  version right 
+	in the npm installation command. 
+	Just like npm install express-validator@5.*.*
+	the above example  will install latest with
+	in the major release of the 5th  version.
+	Now if you want a specific version, u can do like 
+	suppose if  u want to install 5.3.1 then instead of
+	asterisk mark u shall put the minor and patch numbers
+	as u like.
+ */
 app.use(expressValidator({
 	errorFormatter:function(param,msg,value){
 		var namespace = param.split('.')
