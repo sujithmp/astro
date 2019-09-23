@@ -1,0 +1,4 @@
+npm install <any-package> 
+The above command  will install the package  specified but wont save to the package.json file.
+Inorder to do so we have to use the --save flag as shown below
+npm install --save <any-package>
